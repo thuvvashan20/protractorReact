@@ -12,10 +12,10 @@ var AngularHome = function () {
     this.profileSettings = element.all(by.css('.MenuItem-label'));
     this.removeProfilePicLink = element(by.css('button.PhotoUpload-removeButton.LinkButton'));
     this.saveChanges = element(by.css('.Button.Button--medium.Button--primary'));
-    this.tabSelection=element.all(by.css('.tabView-tabName'));
-    this.checkBox=element.all(by.css('.Checkbox-box.Checkbox-box--unchecked.Checkbox-box--enabled.' +
+    this.tabSelection = element.all(by.css('.tabView-tabName'));
+    this.checkBox = element.all(by.css('.Checkbox-box.Checkbox-box--unchecked.Checkbox-box--enabled.' +
         'Checkbox-box--primary'));
-    this.closeButton=element(by.css('.svgIcon '));
+    this.closeButton = element(by.css('.svgIcon '));
 
     this.get = function () {
         browser.get(data.url);
