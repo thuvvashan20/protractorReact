@@ -9,7 +9,7 @@ exports.config = {
 
         jasmine.getEnv().addReporter(new HtmlReporter({
             baseDirectory: 'tmp/screenshots'
-            , docTitle: 'e2e test results' // Title of report
+            , docTitle: 'e2e test results',preserveDirectory: false // Title of report
         }).getJasmine2Reporter());
         browser.manage().timeouts().setScriptTimeout(1500000);
         browser.driver.manage().window().maximize();
@@ -20,7 +20,7 @@ exports.config = {
     allScriptsTimeout: 55000,
     specs: [
 
-        '/Users/thuvvareka/gitlabrepo/evo-testscripts/e2e-tests/core/tests/jobs/evouk/tailormade/PosJobCompletionTM.js'
+        '/Users/thuvvareka/gitlabrepo/pro-js-react/protractorReact/e2e-tests/tests/RunTest.js'
     ],
     capabilities: {
 
